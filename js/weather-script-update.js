@@ -1,6 +1,6 @@
 // Almacenamos las claves API de dos servicios
-const apiClave = 'a9a0c550e7617ee2a2601fa5dc985f49'; // Sustituye por tu clave de Openweather
-const apiKeyPexels = 'Qpezka3vHhycH3qu9dV5kyevy4pPzF049wW1rPkYmyTCTkVKppNEMg7y'; // Reemplaza con tu clave de pexels
+const apiClave = '****************************************'; // Sustituye por tu clave de Openweather
+const apiKeyPexels = '****************************************'; // Reemplaza con tu clave de pexels
 
 // Esperamos a que cargue el DOM
 window.addEventListener('DOMContentLoaded', ()=>{
