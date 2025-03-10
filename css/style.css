@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4158d0;
+    background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+    font-family: 'Tilt Neon', cursive;
+    font-size: 1.5rem;
+}
+
+#contenedor, #contenedor-usuario{
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2rem;
+}
+
+:is(#contenedor, #contenedor-usuario) > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    border-radius: 25px;
+    background: #0093e9;
+    box-shadow: inset -20px -20px 60px #007dc6, inset 20px 20px 60px #00a9ff;
+    color: #fff;
+}
+
+#caja-boton{
+    width: 75%;
+    margin: auto;
+}
+
+#caja-boton >input{
+    width: 75%;
+    margin: auto;
+    display: block;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+#caja-boton input:focus{
+    background-color: rgb(88, 68, 188);
+    color: #fff;
+}
+
+#caja-boton > button{
+    margin: auto;
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(88, 68, 188);
+    color: #fff;
+    cursor: pointer;
+    border: 4px inset #fff;
+}
+
+#caja-boton > button:hover{
+    background-color: #fff;
+    color: rgb(88, 68, 188);
+}
+
+@media only screen and (min-width: 1024px){
+    #contenedor, #contenedor-usuario{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Contenedor por ubicación -->
+    <div id="contenedor">
+        <div id="caja1">
+            <h2 id="temperatura-valor"></h2>
+            <h2 id="temperatura-descripcion"></h2>
+        </div>
+        <div id="caja2">
+            <h2 id="ubicacion"></h2>
+            <img src="" alt="" id="icono-animado">
+        </div>
+        <div id="caja3">
+            <h2>Velocidad del viento</h2>
+            <h2 id="viento-velocidad"></h2>
+        </div>
+    </div>
+
+    <!-- Contenedor para la entrada de usuario -->
+    <div id="caja-boton">
+        <input type="text" name="ciudad" id="ciudad" placeholder="Introduzca una ciudad">
+        <button type="submit" id="consulta">Consulta</button>
+    </div>
+
+    <!-- Contenedor para la info de la ciudad -->
+    <div id="contenedor-usuario">
+        <div id="caja4">
+            <h2 id="temperatura-valor-usuario"></h2>
+            <h2 id="temperatura-descripcion-usuario"></h2>
+        </div>
+        <div id="caja5">
+            <h2 id="ubicacion-usuario"></h2>
+            <img src="" alt="" id="icono-animado-usuario">
+        </div>
+        <div id="caja6">
+            <h2>Velocidad del viento</h2>
+            <h2 id="viento-velocidad-usuario"></h2>
+        </div>
+    </div>
+
+    <!-- Mis scripts -->
+    <script src="js/weather-script-update.js"></script>
+</body>
+</html>
