@@ -1,5 +1,5 @@
 // Declaración de variables
-const apiClave = 'a9a0c550e7617ee2a2601fa5dc985f49';
+const apiClave = '*************************************************';
 
 // Consulta por ubicación del usuario
 window.addEventListener('load', ()=>{
